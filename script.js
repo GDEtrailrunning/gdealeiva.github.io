@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-actualizarDiasRestantes();
-setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
+  actualizarDiasRestantes();
+  setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
    // Datos para el gráfico de líneas
 const dataLine1 = {
-  labels: ['Día 1', 'Día 2', 'Día 3'], // Etiquetas de los días
+  labels: ['Día 1', 'Día 2', 'Dia 3'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 10',
-  data: [11, 14, 23], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 12',
+    data: [9, 10, 16], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
     fill: true,
     tension: 0.1
@@ -14,10 +14,10 @@ const dataLine1 = {
 };
 
 const dataLine2 = {
-  labels: ['Día 1', 'Día 2', 'Día 3'], // Etiquetas de los días
+  labels: ['Día 1', 'Día 2', 'Dia 3'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 11',
-    data: [11, 16, 24], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 13',
+    data: [14, 16, 19], // Datos de los km recorridos en cada día
     borderColor: 'rgba(153, 102, 255, 1)',
     fill: true,
     tension: 0.1
@@ -38,23 +38,11 @@ const configLine = {
 };
 
 // Seleccione los contextos de los <canvas> y cree los gráficos
-const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), {
-  type: 'line',
-  data: dataLine1,
-  options: {
-    responsive: true, // Esto asegura que el gráfico se ajuste a diferentes tamaños de pantalla
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
-});
+const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), configLine);
 const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
   type: 'line',
   data: dataLine2,
   options: {
-    responsive: true, // Esto asegura que el gráfico se ajuste a diferentes tamaños de pantalla
     scales: {
       y: {
         beginAtZero: true
