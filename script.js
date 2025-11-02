@@ -5,8 +5,8 @@ setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
 const dataLine1 = {
   labels: ['Día 1', 'Día 2', 'Día 3'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 34',
-    data: [15, 16, 35], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 36',
+    data: [16, 14, 15], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
     fill: true,
     tension: 0.1
@@ -16,8 +16,8 @@ const dataLine1 = {
 const dataLine2 = {
   labels: ['Día 1', 'Día 2', 'Día 3'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 35',
-    data: [14, 12, 28], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 37',
+    data: [13, 10, 10], // Datos de los km recorridos en cada día
     borderColor: 'rgba(153, 102, 255, 1)',
     fill: true,
     tension: 0.1
